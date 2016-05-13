@@ -1,0 +1,82 @@
+materialize-loader
+====================
+
+Materialize configuration and loading package for webpack, using materialize-css (Sass).
+
+Based on bootstrap-webpack by Scott Bleck (@bline) and font-awesome-webpack by Gowrav Shekar (@gowravshekar).
+
+Usage
+-----
+
+To properly load materialize-css, you need to configure loaders in your `webpack.config.js`. Example:
+
+``` javascript
+module.exports = {
+  module: {
+    loaders: [
+      { test: /\.css$/, loader: 'style!css' },
+      { test: /\.scss$/, loader: 'style!css!sass' },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader:"url?limit=10000&mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file" }
+    ]
+  }
+};
+```
+
+### Complete Materialize
+
+To use the complete Materialize package including all styles with the default settings:
+
+``` javascript
+require("materialize-loader");
+```
+
+### Custom configuration
+
+You can configurate materialize-loader with two configuration files:
+
+* `materialize.config.js`
+* `materialize.config.scss`
+
+Add both files *next to each other* in your project. Then:
+
+``` javascript
+require("materialize-loader!./path/to/materialize.config.js");
+```
+
+Or simple add it as entry point to your `webpack.config.js`:
+
+``` javascript
+module.exports = {
+  entry: [
+    "materialize-loader!./path/to/materialize.config.js",
+    "your-existing-entry-point"
+  ]
+};
+```
+
+#### `materialize.config.js`
+
+Example:
+
+``` javascript
+module.exports = {
+  styles: {
+    "materialize": true,
+  }
+};
+```
+
+#### `materialize.config.scss`
+
+Imported after Materialize's default variables, but before anything else.
+
+You may customize Materialize here.
+
+Example:
+
+``` scss
+$primary-color: color("materialize-red", "lighten-2");
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
+```

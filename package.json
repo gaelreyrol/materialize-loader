@@ -1,0 +1,35 @@
+{
+  "name": "materialize-loader",
+  "version": "1.0.0",
+  "description": "A webpack loader for Materialize Css Library",
+  "main": "index.js",
+  "loader": "index.loader.js",
+  "keywords": [
+    "webpack",
+    "materialize-css",
+    "loader",
+    "sass"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zevran/materialize-loader.git"
+  },
+  "author": {
+      "name": "Gaël Reyrol",
+      "url": "@zevran"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zevran/materialize-loader/issues"
+  },
+  "peerDependencies": {
+    "materialize-css": "*",
+    "css-loader": "*",
+    "node-sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "*"
+  },
+  "readme": "",
+  "readmeFilename": "README.md",
+}
