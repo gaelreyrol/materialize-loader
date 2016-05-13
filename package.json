@@ -1,0 +1,23 @@
+{
+  "name": "materialize-loader",
+  "version": "0.0.0",
+  "description": "A webpack loader for Materialize Css Library",
+  "main": "index.js",
+  "loader": "index.loader.js",
+  "keywords": [
+    "webpack",
+    "materialize-css",
+    "loader",
+    "sass"
+  ],
+  "author": "Gaël Reyrol <gael.reyrol@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "materialize-css": "*",
+    "css-loader": "*",
+    "node-sass": "*",
+    "sass-loader": "*",
+    "style-loader": "*",
+    "webpack": "*"
+  }
+}
