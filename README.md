@@ -3,7 +3,7 @@ materialize-loader
 
 Materialize configuration and loading package for webpack, using materialize-css (Sass).
 
-Based on bootstrap-webpack by Scott Bleck (@bline).
+Based on bootstrap-webpack by Scott Bleck (@bline) and font-awesome-webpack by Gowrav Shekar (@gowravshekar).
 
 Usage
 -----
@@ -16,9 +16,19 @@ module.exports = {
     loaders: [
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.scss$/, loader: 'style!css!sass' },
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader:"url?limit=10000&mimetype=application/font-woff" },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file" }
     ]
   }
 };
+```
+
+### Complete Materialize
+
+To use the complete Materialize package including all styles with the default settings:
+
+``` javascript
+require("materialize-loader");
 ```
 
 ### Custom configuration
@@ -31,7 +41,7 @@ You can configurate materialize-loader with two configuration files:
 Add both files *next to each other* in your project. Then:
 
 ``` javascript
-require("materialize!./path/to/materialize.config.js");
+require("materialize-loader!./path/to/materialize.config.js");
 ```
 
 Or simple add it as entry point to your `webpack.config.js`:
@@ -39,7 +49,7 @@ Or simple add it as entry point to your `webpack.config.js`:
 ``` javascript
 module.exports = {
   entry: [
-    "materialize!./path/to/materialize.config.js",
+    "materialize-loader!./path/to/materialize.config.js",
     "your-existing-entry-point"
   ]
 };
@@ -52,7 +62,7 @@ Example:
 ``` javascript
 module.exports = {
   styles: {
-    "main": true,
+    "materialize": true,
   }
 };
 ```
@@ -61,10 +71,12 @@ module.exports = {
 
 Imported after Materialize's default variables, but before anything else.
 
-You may customize Relacss here.
+You may customize Materialize here.
 
 Example:
 
-``` sass
-$logo-green: green;
+``` scss
+$primary-color: color("materialize-red", "lighten-2");
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-dark: darken($primary-color, 15%);
 ```
