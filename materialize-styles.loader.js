@@ -5,10 +5,13 @@ var styles = [
 module.exports = function(content) {
     this.cacheable(true);
     var config = this.exec(content, this.resourcePath);
-    source = styles.filter(function(style) {
+    var start =
+            "$roboto-font-path: \"~materialize-css/fonts/roboto/\";\n"
+            + "@import \"./materialize.config.scss\";\n";
+    source = start + styles.filter(function(style) {
         return config.styles[style];
     }).map(function(style) {
-        return "@import \"~materialize-css/scss/" + style + ".scss\";";
+        return "@import \"~materialize-css/sass/" + style + ".scss\";";
     }).join("\n");
     return source;
 };
