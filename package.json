@@ -23,7 +23,7 @@
     "url": "https://github.com/zevran/materialize-loader/issues"
   },
   "peerDependencies": {
-    "materialize-css": "^0.97.6",
+    "materialize-css": "^0.97.6"
   },
   "readme": "",
   "readmeFilename": "README.md",
