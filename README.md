@@ -14,8 +14,6 @@ To properly load materialize-css, you need to configure loaders in your `webpack
 module.exports = {
   module: {
     loaders: [
-      { test: /\.css$/, loader: 'style!css' },
-      { test: /\.scss$/, loader: 'style!css!sass' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader:"url?limit=10000&mimetype=application/font-woff" },
       { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file" }
     ]
