@@ -21,6 +21,12 @@ module.exports = {
 };
 ```
 
+Don't forget to install appropriated loaders
+
+```
+npm install --save-dev url-loader file-loader
+```
+
 ### Complete Materialize
 
 To use the complete Materialize package including all styles with the default settings:
