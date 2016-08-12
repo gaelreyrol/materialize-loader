@@ -24,6 +24,12 @@ module.exports = {
 };
 ```
 
+Don't forget to install appropriated loaders
+
+```
+npm install --save-dev url-loader file-loader
+```
+
 ### Complete Materialize
 
 To use the complete Materialize package including all styles with the default settings:
@@ -77,7 +83,7 @@ You may customize Materialize here.
 Example:
 
 ``` scss
-$primary-color: color("materialize-red", "lighten-2");
+$primary-color: color("blue-grey", "lighten-2");
 $primary-color-light: lighten($primary-color, 15%);
 $primary-color-dark: darken($primary-color, 15%);
 ```
