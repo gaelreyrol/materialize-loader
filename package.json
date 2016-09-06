@@ -29,7 +29,7 @@
   "readmeFilename": "README.md",
   "dependencies": {
     "css-loader": "^0.24.0",
-    "node-sass": "^3.8.0",
+    "node-sass": "^3.9.1",
     "sass-loader": "^4.0.1",
     "style-loader": "^0.13.1"
   }
