@@ -23,14 +23,14 @@
     "url": "https://github.com/zevran/materialize-loader/issues"
   },
   "peerDependencies": {
-    "materialize-css": "^0.98.0"
+    "materialize-css": "^0.98.2"
   },
   "readme": "",
   "readmeFilename": "README.md",
   "dependencies": {
-    "css-loader": "^0.26.2",
+    "css-loader": "^0.28.4",
     "node-sass": "^4.5.0",
-    "sass-loader": "^6.0.2",
-    "style-loader": "^0.13.2"
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.18.2"
   }
 }
