@@ -1,7 +1,11 @@
 materialize-loader
 ====================
 
-Materialize configuration and loading package for webpack, using materialize-css (Sass).
+[![Package Quality](http://npm.packagequality.com/badge/materialize-loader.png)](http://packagequality.com/#?package=materialize-loader)
+[![Dependency Status](https://david-dm.org/zevran/materialize-loader.svg)](https://david-dm.org/zevran/materialize-loader)
+[![Known Vulnerabilities](https://snyk.io/test/npm/materialize-loader/badge.svg)](https://snyk.io/test/npm/materialize-loader)
+
+Materialize configuration and loading package for webpack 2, using materialize-css (Sass).
 
 Based on bootstrap-webpack by Scott Bleck (@bline) and font-awesome-webpack by Gowrav Shekar (@gowravshekar).
 
