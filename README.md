@@ -18,8 +18,8 @@ To properly load materialize-css, you need to configure loaders in your `webpack
 module.exports = {
   module: {
     loaders: [
-      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader:"url?limit=10000&mimetype=application/font-woff" },
-      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file" }
+      { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'url-loader?limit=10000&mimetype=application/font-woff' },
+      { test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: 'file-loader' }
     ]
   }
 };
@@ -49,7 +49,7 @@ You can configurate materialize-loader with two configuration files:
 Add both files *next to each other* in your project. Then:
 
 ``` javascript
-require("materialize-loader!./path/to/materialize.config.js");
+require('materialize-loader!./path/to/materialize.config.js');
 ```
 
 Or simple add it as entry point to your `webpack.config.js`:
@@ -57,8 +57,8 @@ Or simple add it as entry point to your `webpack.config.js`:
 ``` javascript
 module.exports = {
   entry: [
-    "materialize-loader!./path/to/materialize.config.js",
-    "your-existing-entry-point"
+    'materialize-loader!./path/to/materialize.config.js',
+    'your-existing-entry-point'
   ]
 };
 ```
@@ -70,7 +70,7 @@ Example:
 ``` javascript
 module.exports = {
   styles: {
-    "materialize": true,
+    'materialize': true,
   }
 };
 ```
