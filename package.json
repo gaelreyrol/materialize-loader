@@ -27,7 +27,7 @@
     "url": "https://github.com/zevran/materialize-loader/issues"
   },
   "peerDependencies": {
-    "materialize-css": "^0.99.0"
+    "materialize-css": ">=0.99.0"
   },
   "readme": "",
   "readmeFilename": "README.md",
@@ -43,7 +43,7 @@
     "babel-preset-env": "^1.5.1",
     "cross-env": "^5.0.1",
     "file-loader": "^0.11.2",
-    "materialize-css": "^0.99.0",
+    "materialize-css": "^0.100.2",
     "url-loader": "^0.5.9",
     "vue": "^2.3.3",
     "vue-loader": "^13.0.1",
