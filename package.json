@@ -6,7 +6,7 @@
   "loader": "index.loader.js",
   "scripts": {
     "dev": "cd tests && cross-env NODE_ENV=development webpack-dev-server --hot",
-    "build": "ct tests && cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cd tests && cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "keywords": [
     "webpack",
