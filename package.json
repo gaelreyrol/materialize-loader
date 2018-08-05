@@ -20,7 +20,7 @@
   },
   "author": {
     "name": "Gaël Reyrol",
-    "url": "@zevran"
+    "url": "https://github.com/Zevran"
   },
   "license": "MIT",
   "bugs": {
@@ -32,24 +32,24 @@
   "readme": "",
   "readmeFilename": "README.md",
   "dependencies": {
-    "css-loader": "^0.28.11",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
+    "css-loader": "^1.0.0",
+    "node-sass": "^4.9.2",
+    "sass-loader": "^7.1.0",
     "style-loader": "^0.21.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
-    "cross-env": "^5.1.5",
+    "cross-env": "^5.2.0",
     "file-loader": "^1.1.11",
     "materialize-css": "^0.100.2",
     "url-loader": "^1.0.1",
-    "vue": "^2.5.16",
-    "vue-loader": "^15.0.10",
-    "vue-template-compiler": "^2.5.16",
-    "webpack": "^4.8.3",
-    "webpack-cli": "^2.1.3",
-    "webpack-dev-server": "^3.1.4"
+    "vue": "^2.5.17",
+    "vue-loader": "^15.2.6",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
   }
 }
