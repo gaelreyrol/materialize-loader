@@ -1,16 +1,15 @@
-materialize-loader
-====================
+# materialize-loader
 
-[![Package Quality](http://npm.packagequality.com/badge/materialize-loader.png)](http://packagequality.com/#?package=materialize-loader)
-[![Dependency Status](https://david-dm.org/zevran/materialize-loader.svg)](https://david-dm.org/zevran/materialize-loader)
-[![Known Vulnerabilities](https://snyk.io/test/npm/materialize-loader/badge.svg)](https://snyk.io/test/npm/materialize-loader)
+[![npm (scoped with tag)](https://img.shields.io/npm/v/materialize-loader/latest.svg?style=flat-square)](https://npmjs.com/package/materialize-loader)
+[![npm](https://img.shields.io/npm/dt/materialize-loader.svg?style=flat-square)](https://npmjs.com/package/materialize-loader)
+[![Dependencies](https://david-dm.org/Zevran/materialize-loader/status.svg?style=flat-square)](https://david-dm.org/Zevran/materialize-loader)
+[![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
-Materialize configuration and loading package for Webpack 4, using materialize-css (Sass).
+> Materialize configuration and loading package for webpack 2, using materialize-css (Sass).
 
 Based on bootstrap-webpack by Scott Bleck (@bline) and font-awesome-webpack by Gowrav Shekar (@gowravshekar).
 
-Usage
------
+## Usage
 
 To properly load materialize-css, you need to configure loaders in your `webpack.config.js`. Example:
 
@@ -27,7 +26,7 @@ module.exports = {
 
 Don't forget to install appropriated loaders
 
-```
+```bash
 npm install --save-dev url-loader file-loader
 ```
 
