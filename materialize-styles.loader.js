@@ -5,7 +5,8 @@ module.exports = function (content) {
   var config = this.exec(content, this.resourcePath);
   var start =
     '$roboto-font-path: "~materialize-css/dist/fonts/roboto/";\n' +
-    '@import "~materialize-css/sass/components/_color.scss";\n' +
+    '@import "~materialize-css/sass/components/_color-variables.scss";\n' +
+    '@import "~materialize-css/sass/components/_color-classes.scss";\n' +
     '@import "./materialize.config.scss";\n';
   source =
     start +
