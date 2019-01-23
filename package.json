@@ -1,6 +1,6 @@
 {
   "name": "materialize-loader",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "A webpack loader for Materialize Css Library",
   "main": "index.js",
   "loader": "index.loader.js",
